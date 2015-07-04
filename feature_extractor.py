@@ -19,6 +19,7 @@ class FeatureExtractor(object):
         X_encoded = X_df
         
         #data_oil = pd.read_csv("./DataLake/data_oil.csv")
+        path = os.path.dirname(__file__)
         data_oil = pd.read_csv(os.path.join(path, "data_oil.csv"))
         #data_oil = data_oil.rename(columns={'Date': 'DateOfDeparture'})
         
